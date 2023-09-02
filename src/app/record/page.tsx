@@ -2,12 +2,14 @@
 import SideBar from "@/components/SideBar";
 import { usePathname } from "next/navigation";
 
-export default function Home() {
+const Record = () => {
   const pathname = usePathname();
   return (
     <div className="flex w-full">
       <SideBar pathname={pathname} />
-      <main className="w-full"></main>
+      <main className="w-full">record</main>
     </div>
   );
-}
+};
+
+export default Record;
